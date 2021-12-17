@@ -19,7 +19,6 @@ import net.coreprotect.listener.ListenerHandler;
 import net.coreprotect.thread.CacheHandler;
 import net.coreprotect.thread.NetworkHandler;
 import net.coreprotect.utility.Chat;
-import net.coreprotect.utility.Color;
 import net.coreprotect.utility.Util;
 
 public final class CoreProtect extends JavaPlugin {
@@ -138,12 +137,14 @@ public final class CoreProtect extends JavaPlugin {
                 return false;
             }
 
+            /* LoverFella: lmao what?
             if (ConfigHandler.EDITION_BRANCH.length() == 0) {
                 Chat.sendConsoleMessage(Color.RED + "[CoreProtect] " + Phrase.build(Phrase.INVALID_BRANCH_1));
                 Chat.sendConsoleMessage(Color.GREY + "[CoreProtect] " + Phrase.build(Phrase.INVALID_BRANCH_2));
                 Chat.sendConsoleMessage(Color.GREY + "[CoreProtect] " + Phrase.build(Phrase.INVALID_BRANCH_3));
                 return false;
             }
+            */
 
             ConfigHandler.SERVER_VERSION = Integer.parseInt(bukkitVersion[1]);
         }
